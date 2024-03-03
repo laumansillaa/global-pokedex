@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 220px);
+    gap: 10px;
+    margin-bottom: 15px;
+} 
+
+.containerList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    overflow-y: auto;
+}

@@ -1,0 +1,13 @@
+.styledButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    height: 44px;
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 21.6px;
+    color:  var(--color-white);
+    transition: color 0.3s ease-in-out, 
+}

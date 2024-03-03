@@ -1,0 +1,107 @@
+@import './fonts.css';
+
+:root {
+  font-family: Lato, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --font-secondary: Montserrat; 
+  --color-white: #ffffff;
+  --color-white-medium: #f5f5f5;
+  --color-primary-gray: #353535;
+  --color-secondary-gray: #5e5e5e;
+  --color-tertiary-gray: #bfbfbf;
+  --color-primary-text: #ffffff;
+  --color-main-text: #353535;
+  --color-secondary-text: #5e5e5e;
+  --color-button-bg: #f22539;
+  --color-button-active: #c00e20;
+  --color-button-disabled: #bfbfbf;
+  --border-radius-bottom: 60px;
+  --border-radius-input: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit; 
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: var(--color-button-bg);
+  border-radius: var(--border-radius-bottom);
+  color: var(--color-primary-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  &:active {
+    background-color: var(--color-button-active);
+  }
+
+  &:disabled {
+    background-color: var(--color-button-disabled);
+    cursor: default;
+  }
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-tertiary-gray);
+}
